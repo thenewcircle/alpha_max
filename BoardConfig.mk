@@ -307,12 +307,8 @@ endif
 
 # ------------------ END MIX-IN DEFINITIONS ------------------
 
-# ------------------ ALPHA DEVICE DEFINITIONS ----------------
-
-# Include SELinux policy additions for our services
-BOARD_SEPOLICY_DIRS += $(MY_PATH)/sepolicy
-# Our additions include a new system service context
-BOARD_SEPOLICY_UNION += service_contexts
+# Add our custom service policy
+BOARD_SEPOLICY_DIRS += device/newcircle/alpha_max/sepolicy
 
 # Add our custom kernel params
 LOCAL_KERNEL_PATH := device/newcircle/alpha_max/kernel/x86_64

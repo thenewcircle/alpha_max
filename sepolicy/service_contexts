@@ -1,1 +1,2 @@
+# Alpha Service Definitions
 com.marakana.android.service.log.ILogService    u:object_r:system_app_service:s0
