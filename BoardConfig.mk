@@ -309,10 +309,3 @@ endif
 
 # Add our custom service policy
 BOARD_SEPOLICY_DIRS += device/newcircle/alpha_max/sepolicy
-
-# Add our custom kernel params
-LOCAL_KERNEL_PATH := device/newcircle/alpha_max/kernel/x86_64
-TARGET_PREBUILT_KERNEL := $(LOCAL_KERNEL_PATH)/bzImage
-TARGET_PREBUILT_KERNEL_MODULE_PATH := $(LOCAL_KERNEL_PATH)/modules
-TARGET_PREBUILT_KERNEL_MODULE_TREE_PATH := $(LOCAL_KERNEL_PATH)/lib/modules
-

@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
+# Add our custom kernel params before calling parent product
+LOCAL_KERNEL_PATH := device/newcircle/alpha_max/kernel/x86_64
+TARGET_PREBUILT_KERNEL := $(LOCAL_KERNEL_PATH)/bzImage
+TARGET_PREBUILT_KERNEL_MODULE_PATH := $(LOCAL_KERNEL_PATH)/modules
+TARGET_PREBUILT_KERNEL_MODULE_TREE_PATH := $(LOCAL_KERNEL_PATH)/lib/modules
+
 # Inherit from the Intel MinnowBoard device target
 $(call inherit-product, device/intel/baytrail/minnow_max/minnow_max.mk)
 
